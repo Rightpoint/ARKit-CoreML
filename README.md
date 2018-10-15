@@ -29,7 +29,7 @@ See [`ARSceneViewController`](ARKitCoreML/ARSceneViewController.swift) for an ex
 
 ```swift
 lazy var recognizer = MLRecognizer(
-    model: Queens().model,
+    model: PlayingCards().model,
     sceneView: sceneView
 )
 ```
@@ -45,7 +45,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
         if case .success(let classification) = result {
 
             // update app with classification
-            self?.title = classification
+            self?.attachLabel(classification, to: node)
         }
     }
 }
