@@ -10,7 +10,18 @@ import ARKit
 
 extension ARSCNView {
 
-    func capturedImage(from anchor: ARImageAnchor) -> UIImage? {
+    /**
+     Functionally equivalent to `SCNView`'s `snapshot()`, except only including the raw camera image, not any virtual geometry that may be in the scene.
+     */
+    public func capturedImage() -> UIImage? {
+        guard let frame = session.currentFrame else { return nil }
+        return frame.getCapturedImage(inSceneView: self)
+    }
+
+    /**
+     Returns a cropped and deskewed image of the raw camera image of a given `ARImageAnchor`, not including any virtual geometry that may be in the scene.
+     */
+    public func capturedImage(from anchor: ARImageAnchor) -> UIImage? {
         guard
             let frame = session.currentFrame,
             let node = node(for: anchor),
