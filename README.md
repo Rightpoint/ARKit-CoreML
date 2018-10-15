@@ -6,7 +6,7 @@
 
 ![Xcode Reference Too Similar](Documentation%20Support/Xcode_Reference_Too_Similar.png)
 
-<img src="https://github.com/Raizlabs/ARKit-CoreML/blob/blog/Documentation%20Support/Queen_Clubs.jpg" height="350"> <img src="https://github.com/Raizlabs/ARKit-CoreML/blob/blog/Documentation%20Support/Queen_Diamond.jpg" height="350">
+<img src="https://github.com/Raizlabs/ARKit-CoreML/blob/master/Documentation%20Support/Queen_Clubs.jpg" height="350"> <img src="https://github.com/Raizlabs/ARKit-CoreML/blob/master/Documentation%20Support/Queen_Diamond.jpg" height="350">
 
 This lenience is understandable. Image detection needs to be robust across lighting conditions, orientation, and other printing/reproduction irregularities. ARKit is prioritizing a stronger, uninterrupted tracking experience over fine disambiguation of tracking images.
 
