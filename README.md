@@ -10,7 +10,7 @@ This lenience is understandable. Image detection needs to be robust across light
 
 By inspection however, these two images _should_ be easy for a machine to differentiate. Their colors and compositions are plenty different. 
 
-Consider an application where a different AR experience is triggered off of each playing card. Perhaps we learn the bask story of the different Queens and their path to royalty. The AR tracking is important to identify the trigger and to physically anchor the experience. But we _need_ to be able to confidently tell which card we're tracking. Enter `CoreML`.
+Consider an application where a different AR experience is triggered off of each playing card. Perhaps we learn the back story of the different Queens and their path to royalty. The AR tracking is important to identify the trigger and to physically anchor the experience. But we _need_ to be able to confidently tell which card we're tracking. Enter `CoreML`.
 
 CoreML can be employed to help disambiguate the playing cards using a simple image classifier. In the grand scheme its vast capabilities, differentiating a few static compositions is a trivial task for machine learning. Using [CreateML](https://developer.apple.com/documentation/createml), [Custom Vision](https://www.customvision.ai/), [Watson](https://developer.ibm.com/patterns/deploy-a-core-ml-model-with-watson-visual-recognition/), or any other drag-and-drop service capable of generating a `.mlmodel` file, you can have a robust image classifier with as few as 5 training images per classification.
 
