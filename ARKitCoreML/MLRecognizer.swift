@@ -33,6 +33,10 @@ class MLRecognizer: NSObject {
         }
     }
 
+}
+
+private extension MLRecognizer {
+
     private func _classify(imageAnchor: ARImageAnchor, completion: @escaping (Result<String>) -> Void) {
         // 1. Crop image of the projection of the anchor
         guard

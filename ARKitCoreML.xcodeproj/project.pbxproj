@@ -14,8 +14,8 @@
 		006E9195216F9A1A0064F7DE /* ARKit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9194216F9A1A0064F7DE /* ARKit+Utilities.swift */; };
 		006E9197216F9BE10064F7DE /* UIImage+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9196216F9BE10064F7DE /* UIImage+Utilities.swift */; };
 		006E9199216FE3090064F7DE /* CoreImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9198216FE3090064F7DE /* CoreImage+Utility.swift */; };
-		006E919B21710E9F0064F7DE /* Queens.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 006E919A21710E9F0064F7DE /* Queens.mlmodel */; };
 		006E919D2171248C0064F7DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006E919C2171248C0064F7DE /* LaunchScreen.storyboard */; };
+		0084F8FE21752FA600079268 /* PlayingCards.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0084F8FD21752FA600079268 /* PlayingCards.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		006E9194216F9A1A0064F7DE /* ARKit+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARKit+Utilities.swift"; sourceTree = "<group>"; };
 		006E9196216F9BE10064F7DE /* UIImage+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utilities.swift"; sourceTree = "<group>"; };
 		006E9198216FE3090064F7DE /* CoreImage+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreImage+Utility.swift"; sourceTree = "<group>"; };
-		006E919A21710E9F0064F7DE /* Queens.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Queens.mlmodel; path = MachineLearning/Queens.mlmodel; sourceTree = "<group>"; };
 		006E919C2171248C0064F7DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0084F8FD21752FA600079268 /* PlayingCards.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PlayingCards.mlmodel; path = ../../../.Trash/PlayingCards.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				006E9185216F91630064F7DE /* Assets.xcassets */,
 				006E919C2171248C0064F7DE /* LaunchScreen.storyboard */,
 				006E918A216F91630064F7DE /* Info.plist */,
-				006E919A21710E9F0064F7DE /* Queens.mlmodel */,
+				0084F8FD21752FA600079268 /* PlayingCards.mlmodel */,
 			);
 			path = ARKitCoreML;
 			sourceTree = "<group>";
@@ -150,8 +150,8 @@
 				006E9191216F92B90064F7DE /* ARSceneViewController.swift in Sources */,
 				006E9195216F9A1A0064F7DE /* ARKit+Utilities.swift in Sources */,
 				006E9197216F9BE10064F7DE /* UIImage+Utilities.swift in Sources */,
+				0084F8FE21752FA600079268 /* PlayingCards.mlmodel in Sources */,
 				006E9193216F92D20064F7DE /* MLRecognizer.swift in Sources */,
-				006E919B21710E9F0064F7DE /* Queens.mlmodel in Sources */,
 				006E917F216F91620064F7DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
