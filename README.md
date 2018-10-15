@@ -1,6 +1,6 @@
 # Using CoreML to enhance ARKit
 
-ARKit is good at tracking images, but is pretty lenient. Enough to consider the Queen of Diamonds and the Queen of Clubs to be the same tracking image.
+ARKit is good at tracking images, but is pretty lenient. Enough to consider the Queen of Clubs and the Queen of Diamonds to be the same tracking image.
 
 ![Xcode Reference Too Similar](Documentation%20Support/Xcode_Reference_Too_Similar.png)
 
