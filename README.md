@@ -1,5 +1,7 @@
 ## Enhancing ARKit image detection with CoreML
 
+![Demo Gif](Documentation%20Support/Demo.gif)
+
 `ARKit` is good at tracking images, but is pretty lenient. Enough to consider the Queen of Clubs and the Queen of Diamonds to be too similar to track separately.
 
 ![Xcode Reference Too Similar](Documentation%20Support/Xcode_Reference_Too_Similar.png)
