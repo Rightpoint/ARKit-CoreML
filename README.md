@@ -42,7 +42,7 @@ In the `ARSCNViewDelegate` `renderer(_:didAdd:for:)` callback, we forward the im
 func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
     guard let imageAnchor = anchor as? ARImageAnchor else { return }
 
-    // send off anchor to be screenshotted, cropped, deskewed, and classified
+    // send off anchor to be snapshotted, cropped, deskewed, and classified
     recognizer.classify(imageAnchor: imageAnchor) { [weak self] result in
         if case .success(let classification) = result {
 
