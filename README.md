@@ -1,4 +1,4 @@
-## Enhancing ARKit image detection with CoreML
+## Enhancing ARKit image detection with Core ML
 
 ![Demo Gif](Documentation%20Support/Demo.gif)
 
