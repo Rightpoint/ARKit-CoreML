@@ -8,7 +8,7 @@ ARKit is a powerful tool that allows developers to create Augmented Reality apps
 For the best experience, image detection should be robust across lighting conditions, orientation, and other printing/reproduction irregularities. ARKit prioritizes this stronger, uninterrupted tracking experience over fine disambiguation between tracking images. Consequently, ARKit is fairly "lenient" when it comes to image detection.
 
 ## An Example: Identifying Playing Cards
-Consider an application where a different AR experience is triggered off of each playing card. (Perhaps we learn the story of the different Queens and their path to royalty.) AR tracking is essential for identifying the trigger and physically anchoring the experience. But we _need_ to be able to tell which card we're tracking confidently.
+Consider an application where a different AR experience is triggered off of each playing card. (Perhaps we learn the story of the different Queens and their path to royalty.)
 
 ![Demo Gif](Documentation%20Support/Demo.gif)
 
@@ -17,8 +17,7 @@ Unfortunately, ARKit considers the Queen of Clubs and the Queen of Diamonds to b
 <img src="https://github.com/Raizlabs/ARKit-CoreML/blob/master/Documentation%20Support/Queen_Clubs.jpg" height="350"> <img src="https://github.com/Raizlabs/ARKit-CoreML/blob/master/Documentation%20Support/Queen_Diamond.jpg" height="350">
 ![Xcode Reference Too Similar](Documentation%20Support/Xcode_Reference_Too_Similar.png)
 
-This ambiguity makes it impossible to build this experience using ARKit alone. (Both queens will be recognized in each card).
-By inspection, however, these two images _should_ be easy for a machine to differentiate. Their colors and compositions are plenty different.
+This ambiguity makes it impossible to build the above experience using ARKit alone. (Both queens will be recognized in each card). By inspection, however, these two images _should_ be easy for a machine to differentiate. Their colors and compositions are plenty different.
 
 ## How Core ML Can Help
 
