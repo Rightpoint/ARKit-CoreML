@@ -1,4 +1,4 @@
-# Enhancing ARKit Image Detection with Core ML
+# Enhancing ARKit Image Detection With Core ML
 _ARKit is quite good at tracking images, but it struggles to disambiguate similar compositions. Core ML can help fill in the gaps._
 
 #### ARKit
