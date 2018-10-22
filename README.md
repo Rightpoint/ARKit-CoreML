@@ -1,18 +1,18 @@
 # Enhancing ARKit Image Detection with Core ML
-_ARKit is quite good at tracking images, but is pretty lenient. Core ML can be used to fill in the gaps._
+_ARKit is quite good at tracking images, but it struggles to disambiguate similar compositions. Core ML can help fill in the gaps._
 
 #### ARKit
 ARKit is a powerful tool that allows developers to create Augmented Reality apps. It comes loaded with [image detection and tracking](https://developer.apple.com/documentation/arkit/recognizing_images_in_an_ar_experience) functionality, which allows apps to "anchor" virtual content contextually on to real-world surfaces.
 
 #### Tracking/Detection Trade-offs
-For the best possible experience, image detection needs to be robust across lighting conditions, orientation, and other printing/reproduction irregularities. ARKit prioritizes this stronger, uninterrupted tracking experience over fine disambiguation between tracking images. Consequently, ARKit is fairly "lenient" when it comes to image detection.
+For the best experience, image detection should be robust across lighting conditions, orientation, and other printing/reproduction irregularities. ARKit prioritizes this stronger, uninterrupted tracking experience over fine disambiguation between tracking images. Consequently, ARKit is fairly "lenient" when it comes to image detection.
 
 ### An Example
-Consider an application where a different AR experience is triggered off of each playing card. Perhaps we learn the back story of the different Queens and their path to royalty. 
+Consider an application where a different AR experience is triggered off of each playing card. (Perhaps we learn the story of the different Queens and their path to royalty.)
 
 ![Demo Gif](Documentation%20Support/Demo.gif)
 
-The AR tracking is essential for identifying the trigger and physically anchoring the experience. But we _need_ to be able to tell which card we're tracking confidently. Unfotunately, ARKit considers the Queen of Clubs and the Queen of Diamonds to be compositionally too similar to track separately. 
+AR tracking is essential for identifying the trigger and physically anchoring the experience. But we _need_ to be able to tell which card we're tracking confidently. Unfortunately, ARKit considers the Queen of Clubs and the Queen of Diamonds to be compositionally too similar to track separately. 
 
 <img src="https://github.com/Raizlabs/ARKit-CoreML/blob/master/Documentation%20Support/Queen_Clubs.jpg" height="350"> <img src="https://github.com/Raizlabs/ARKit-CoreML/blob/master/Documentation%20Support/Queen_Diamond.jpg" height="350">
 ![Xcode Reference Too Similar](Documentation%20Support/Xcode_Reference_Too_Similar.png)
@@ -38,7 +38,7 @@ While the high-level approach isn't complicated, the low-level execution is more
 This project serves as an example and a host for utility methods to make it easier to incorporate Core ML into your ARKit applications.
 
 ### MLRecognizer
-The tricky functionality is abstracted behind a simple [`MLRecognizer`](ARKitCoreML/MLRecognizer.swift) class. To use it, instantiate it with a reference to your `MLModel` and your `ARSceneView`. 
+The tricky functionality is abstracted behind a simple [`MLRecognizer`](ARKitCoreML/MLRecognizer.swift) class. Instantiate it with a reference to your `MLModel` and your `ARSceneView`. 
 
 ```swift
 lazy var recognizer = MLRecognizer(
@@ -51,6 +51,8 @@ Then, use the `classify` method to receive a classification for a given `ARImage
 ```swift
 func classify(imageAnchor: ARImageAnchor, completion: @escaping (Result<String>) -> Void)
 ```
+
+Thats it! Go build something cool.
 
 ### Example
 See [`ARSceneViewController`](ARKitCoreML/ARSceneViewController.swift) for an example implementation. 
@@ -91,3 +93,6 @@ extension ARSCNView {
     public func capturedImage(from anchor: ARImageAnchor) -> UIImage?
 }
 ```
+
+## Installation
+// TODO
