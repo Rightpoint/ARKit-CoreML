@@ -38,7 +38,7 @@ While the high-level approach isn't complicated, the low-level execution is more
 This project serves as an example and a host for utility methods to make it easier to incorporate Core ML into your ARKit applications.
 
 ### MLRecognizer
-The tricky functionality is abstracted behind a simple [`MLRecognizer`](ARKitCoreML/MLRecognizer.swift) class. Instantiate it with a reference to your `MLModel` and your `ARSceneView`. 
+The tricky functionality is abstracted behind a simple [`MLRecognizer`](Library/MLRecognizer.swift) class. Instantiate it with a reference to your `MLModel` and your `ARSceneView`. 
 
 ```swift
 lazy var recognizer = MLRecognizer(
@@ -55,7 +55,7 @@ func classify(imageAnchor: ARImageAnchor, completion: @escaping (Result<String>)
 Thats it! Go build something cool.
 
 ### Example
-See [`ARSceneViewController`](ARKitCoreML/ARSceneViewController.swift) for an example implementation. 
+See [`ARSceneViewController`](Example/ARSceneViewController.swift) for an example implementation. 
 
 In the `ARSCNViewDelegate` `renderer(_:didAdd:for:)` callback, we forward the image anchor to the `MLRecognizer` to be snapshotted, cropped, deskewed, and classified.
 
@@ -75,7 +75,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 ```
 
 ## Utilities
-[`ARKit+Utilities`](ARKitCoreML/ARKit+Utilities.swift) contains a number of useful utilities for capturing and cropping images from ARKit scenes.
+[`ARKit+Utilities`](Library/ARKit+Utilities.swift) contains a number of useful utilities for capturing and cropping images from ARKit scenes.
 
 ```swift
 extension ARSCNView {
@@ -95,4 +95,4 @@ extension ARSCNView {
 ```
 
 ## Installation
-// TODO
+Add the files located in the [Library](Library/) folder to your project!
