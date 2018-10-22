@@ -7,7 +7,7 @@ ARKit is a powerful tool that allows developers to create Augmented Reality apps
 #### Tracking/Detection Trade-offs
 For the best experience, image detection should be robust across lighting conditions, orientation, and other printing/reproduction irregularities. ARKit prioritizes this stronger, uninterrupted tracking experience over fine disambiguation between tracking images. Consequently, ARKit is fairly "lenient" when it comes to image detection.
 
-### An Example
+## An Example: Identifying Playing Cards
 Consider an application where a different AR experience is triggered off of each playing card. (Perhaps we learn the story of the different Queens and their path to royalty.)
 
 ![Demo Gif](Documentation%20Support/Demo.gif)
@@ -20,7 +20,7 @@ AR tracking is essential for identifying the trigger and physically anchoring th
 This ambiguity makes it impossible to build this experience using ARKit alone. (Both queens will be recognized in each card).
 By inspection, however, these two images _should_ be easy for a machine to differentiate. Their colors and compositions are plenty different.
 
-### How Core ML Can Help
+## How Core ML Can Help
 
 Core ML can be employed to help disambiguate the playing cards using a simple image classifier. Compared to its vast capabilities, differentiating a few static compositions is a trivial task for machine learning. Using [Create ML](https://developer.apple.com/documentation/createml), [Custom Vision](https://www.customvision.ai/), [Watson](https://developer.ibm.com/patterns/deploy-a-core-ml-model-with-watson-visual-recognition/), or any other drag-and-drop service capable of generating a `.mlmodel` file, you can have a robust image classifier with as few as 5 training images per classification.
 
