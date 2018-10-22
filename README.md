@@ -1,10 +1,10 @@
 # Enhancing ARKit Image Detection With Core ML
 _ARKit is quite good at tracking images, but it struggles to disambiguate similar compositions. Core ML can help fill in the gaps._
 
-#### ARKit
+### ARKit Image Tracking
 ARKit is a powerful tool that allows developers to create Augmented Reality apps. It comes loaded with [image detection and tracking](https://developer.apple.com/documentation/arkit/recognizing_images_in_an_ar_experience) functionality, which allows apps to "anchor" virtual content contextually on to real-world surfaces.
 
-#### Tracking/Detection Trade-offs
+### Tracking/Detection Trade-offs
 For the best experience, image detection should be robust across lighting conditions, orientation, and other printing/reproduction irregularities. ARKit prioritizes this stronger, uninterrupted tracking experience over fine disambiguation between tracking images. Consequently, ARKit is fairly "lenient" when it comes to image detection.
 
 ## An Example: Identifying Playing Cards
