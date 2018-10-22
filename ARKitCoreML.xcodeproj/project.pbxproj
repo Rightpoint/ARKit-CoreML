@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00428504217E484E005F53EB /* PlayingCards.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 00428503217E484E005F53EB /* PlayingCards.mlmodel */; };
+		0042850A217E499A005F53EB /* ARKit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00428506217E499A005F53EB /* ARKit+Utilities.swift */; };
+		0042850B217E499A005F53EB /* CoreImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00428507217E499A005F53EB /* CoreImage+Utility.swift */; };
+		0042850C217E499A005F53EB /* UIImage+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00428508217E499A005F53EB /* UIImage+Utilities.swift */; };
+		0042850D217E499A005F53EB /* MLRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00428509217E499A005F53EB /* MLRecognizer.swift */; };
 		006E917F216F91620064F7DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E917E216F91620064F7DE /* AppDelegate.swift */; };
 		006E9186216F91630064F7DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006E9185216F91630064F7DE /* Assets.xcassets */; };
 		006E9191216F92B90064F7DE /* ARSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9190216F92B90064F7DE /* ARSceneViewController.swift */; };
-		006E9193216F92D20064F7DE /* MLRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9192216F92D20064F7DE /* MLRecognizer.swift */; };
-		006E9195216F9A1A0064F7DE /* ARKit+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9194216F9A1A0064F7DE /* ARKit+Utilities.swift */; };
-		006E9197216F9BE10064F7DE /* UIImage+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9196216F9BE10064F7DE /* UIImage+Utilities.swift */; };
-		006E9199216FE3090064F7DE /* CoreImage+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E9198216FE3090064F7DE /* CoreImage+Utility.swift */; };
 		006E919D2171248C0064F7DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006E919C2171248C0064F7DE /* LaunchScreen.storyboard */; };
-		0084F8FE21752FA600079268 /* PlayingCards.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0084F8FD21752FA600079268 /* PlayingCards.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00428503217E484E005F53EB /* PlayingCards.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PlayingCards.mlmodel; path = MachineLearning/PlayingCards.mlmodel; sourceTree = "<group>"; };
+		00428506217E499A005F53EB /* ARKit+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARKit+Utilities.swift"; sourceTree = "<group>"; };
+		00428507217E499A005F53EB /* CoreImage+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreImage+Utility.swift"; sourceTree = "<group>"; };
+		00428508217E499A005F53EB /* UIImage+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utilities.swift"; sourceTree = "<group>"; };
+		00428509217E499A005F53EB /* MLRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MLRecognizer.swift; sourceTree = "<group>"; };
 		006E917B216F91620064F7DE /* ARKitCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006E917E216F91620064F7DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		006E9185216F91630064F7DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		006E918A216F91630064F7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006E9190216F92B90064F7DE /* ARSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSceneViewController.swift; sourceTree = "<group>"; };
-		006E9192216F92D20064F7DE /* MLRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLRecognizer.swift; sourceTree = "<group>"; };
-		006E9194216F9A1A0064F7DE /* ARKit+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARKit+Utilities.swift"; sourceTree = "<group>"; };
-		006E9196216F9BE10064F7DE /* UIImage+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utilities.swift"; sourceTree = "<group>"; };
-		006E9198216FE3090064F7DE /* CoreImage+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreImage+Utility.swift"; sourceTree = "<group>"; };
 		006E919C2171248C0064F7DE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0084F8FD21752FA600079268 /* PlayingCards.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PlayingCards.mlmodel; path = ../../../.Trash/PlayingCards.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +43,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00428505217E499A005F53EB /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				00428506217E499A005F53EB /* ARKit+Utilities.swift */,
+				00428507217E499A005F53EB /* CoreImage+Utility.swift */,
+				00428508217E499A005F53EB /* UIImage+Utilities.swift */,
+				00428509217E499A005F53EB /* MLRecognizer.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		006E9172216F91620064F7DE = {
 			isa = PBXGroup;
 			children = (
-				006E917D216F91620064F7DE /* ARKitCoreML */,
+				00428505217E499A005F53EB /* Library */,
+				006E917D216F91620064F7DE /* Example */,
 				006E917C216F91620064F7DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,21 +71,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		006E917D216F91620064F7DE /* ARKitCoreML */ = {
+		006E917D216F91620064F7DE /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				006E917E216F91620064F7DE /* AppDelegate.swift */,
 				006E9190216F92B90064F7DE /* ARSceneViewController.swift */,
-				006E9192216F92D20064F7DE /* MLRecognizer.swift */,
-				006E9194216F9A1A0064F7DE /* ARKit+Utilities.swift */,
-				006E9196216F9BE10064F7DE /* UIImage+Utilities.swift */,
-				006E9198216FE3090064F7DE /* CoreImage+Utility.swift */,
 				006E9185216F91630064F7DE /* Assets.xcassets */,
 				006E919C2171248C0064F7DE /* LaunchScreen.storyboard */,
 				006E918A216F91630064F7DE /* Info.plist */,
-				0084F8FD21752FA600079268 /* PlayingCards.mlmodel */,
+				00428503217E484E005F53EB /* PlayingCards.mlmodel */,
 			);
-			path = ARKitCoreML;
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,12 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006E9199216FE3090064F7DE /* CoreImage+Utility.swift in Sources */,
 				006E9191216F92B90064F7DE /* ARSceneViewController.swift in Sources */,
-				006E9195216F9A1A0064F7DE /* ARKit+Utilities.swift in Sources */,
-				006E9197216F9BE10064F7DE /* UIImage+Utilities.swift in Sources */,
-				0084F8FE21752FA600079268 /* PlayingCards.mlmodel in Sources */,
-				006E9193216F92D20064F7DE /* MLRecognizer.swift in Sources */,
+				0042850A217E499A005F53EB /* ARKit+Utilities.swift in Sources */,
+				0042850B217E499A005F53EB /* CoreImage+Utility.swift in Sources */,
+				00428504217E484E005F53EB /* PlayingCards.mlmodel in Sources */,
+				0042850D217E499A005F53EB /* MLRecognizer.swift in Sources */,
+				0042850C217E499A005F53EB /* UIImage+Utilities.swift in Sources */,
 				006E917F216F91620064F7DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +289,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 336S848KQ4;
-				INFOPLIST_FILE = ARKitCoreML/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 336S848KQ4;
-				INFOPLIST_FILE = ARKitCoreML/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
